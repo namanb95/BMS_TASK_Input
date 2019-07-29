@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Input Task</title>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <form onsubmit="handleOnSubmit(event)">
+      <fieldset >
+        <label>Range, Number</label>
+        <input
+          onkeypress="return blockChar(event)"
+          type="text"
+          id="inputRanger"
+        />
+        <input type="submit" />
+    </form>
+<br />
+      Unique :
+      <div id="uniq"></div>
+
+      Duplicate:
+      <div id="dupp"></div>
+
+      Final List:
+      <div id="final"></div>
+    </fieldset>
+  </body>
+</html>
